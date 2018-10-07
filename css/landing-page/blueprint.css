@@ -1,13 +1,24 @@
 #blueprint {
-
+    background: #5F65F1;
+    padding: 170px 0;
 }
 
-#blueprint .container {
-
-}
-
-#blueprint .container:after {
+#blueprint .container:after { /* Always use this clear fix on the parent element when using floats */
     content: "";
     display: table;
     clear: both;
+}
+
+#blueprint .left-side {
+    width: 50%;
+    float: left;
+}
+
+#blueprint .left-side img {
+    width: 100%;
+}
+
+#blueprint .right-side {
+    width: 50%;
+    float: left;
 }
