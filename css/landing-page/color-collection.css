@@ -1,0 +1,168 @@
+#color-collection {
+    padding: 0 0 100px;
+}
+
+#color-collection .container:after { /* Put this on the parent element any time using floats */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#color-collection .left-side {
+    width: 60%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+#color-collection .left-side img {
+    width: 80%;
+}
+
+#color-collection .right-side {
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+
+#color-collection .right-side:after {   /* Put this on the parent element any time using floats */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#color-collection .right-side .swatch-area {
+    background: white;
+    padding: 12px 20px; 
+    display: inline-block;
+    border-radius: 45px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#color-collection .right-side .swatch-area:after {   /* Put this on the parent element any time using floats */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#color-collection .right-side .swatch-area .circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+#color-collection .right-side .swatch-area .circle:nth-child(1) {
+    background: #fcecfc; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#color-collection .right-side .swatch-area .circle:nth-child(2) {
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#color-collection .right-side .swatch-area .circle:nth-child(3) {
+    background: #ffb76b; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin-right: 0;
+}
+
+#color-collection .right-side .info-box {
+    max-width: 290px;
+    width: 100%;
+    background: white;
+    padding: 40px 20px; 
+    display: inline-block;  
+    text-align: center;
+}
+
+#color-collection .right-side .info-box h2 {
+    font-size: 2rem;
+}
+
+#color-collection .right-side .info-box h2 span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#color-collection .right-side .info-box h2 span.orange {
+    color: #FEA83B;
+    font-weight: 300;
+}
+
+#color-collection .right-side .info-box h2 span.blue {
+    color: #5F65F1;
+    font-weight: 700;
+}
+
+#color-collection .right-side .info-box h2 span.purple {
+    color: #B286F8;
+    font-weight: 300;
+}
+
+#color-collection .right-side .info-box p {
+    color: #aaacaf;
+    font-size: 0.8rem;
+    margin: 40px 0;
+}
+
+#color-collection .right-side .info-box a {
+    color: #5F65F1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 40px 0 20px;
+    display: block;
+}
+
+#color-collection .right-side .info-box .line {
+    height: 2px;
+    width: 50px;
+    background: #B286F8;
+    display: inline-block;
+}
+
+#color-collection .right-side .color-slider {
+    position: relative;
+    width: 20px;
+    height: 500px;
+    border-radius: 40px;
+    background: #ff3232; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff3232 0%, #ff8832 8%, #ffff32 20%, #40ff32 32%, #30fffb 46%, #3056ff 61%, #ff30f1 79%, #ff0004 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ff3232 0%,#ff8832 8%,#ffff32 20%,#40ff32 32%,#30fffb 46%,#3056ff 61%,#ff30f1 79%,#ff0004 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ff3232 0%,#ff8832 8%,#ffff32 20%,#40ff32 32%,#30fffb 46%,#3056ff 61%,#ff30f1 79%,#ff0004 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#color-collection .right-side .color-slider .picker {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 10px solid #fff; 
+    background: #FEA83B;
+    box-sizing: content-box;
+    position: absolute;
+    top: 62px;
+    left: -9px;
+}
+
+#color-collection .right-side .col-1 {
+     float: left;
+     width: 80%;
+}
+
+#color-collection .right-side .col-2 {
+    float: left;
+    width: 20%;
+}

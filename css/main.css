@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import "landing-page/reset.css";
+@import "landing-page/header.css";
+@import "landing-page/top-jumbo.css";
+@import "landing-page/design-by.css";
+@import "landing-page/color-collection.css";
+@import "landing-page/blueprint.css";
+/* 
+FEA83B orange
+6066F2 light blue
+B286F8 purple
+4C44C1 blue
+E6CDF9 light purple
+*/
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container-fluid {
+    margin: 0 1%;;
+    padding: 0 20px;
+}
+
+.box-shadow-down {
+    -webkit-box-shadow: 13px 17px 40px -10px rgba(0,0,0,0.39);
+    -moz-box-shadow: 13px 17px 40px -10px rgba(0,0,0,0.39);
+    box-shadow: 13px 17px 40px -10px rgba(0,0,0,0.39);
+}
+
+.box-shadow-center {
+    -webkit-box-shadow: 0px 0px 65px 13px rgba(158,158,158,0.2);
+    -moz-box-shadow: 0px 0px 65px 13px rgba(158,158,158,0.2);
+    box-shadow: 0px 0px 65px 13px rgba(158,158,158,0.2);
+}

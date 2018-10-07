@@ -1,0 +1,93 @@
+#top-jumbo {
+    padding: 0 0 400px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 24%, #ab83e2 72%, #e8a6ea 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 24%,#ab83e2 72%,#e8a6ea 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ffffff 0%,#ffffff 24%,#ab83e2 72%,#e8a6ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#top-jumbo:after {   /* Put this on the parent element any time using floats */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#top-jumbo .left-side {
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+
+#top-jumbo .left-side .large-number {
+    font-size: 16rem; /* or 300px */
+    font-weight: 700;
+    opacity: 0.065;
+    color: #5F65F1;
+    position: relative;
+    left: -20px;
+    top: 0px;
+    z-index: 1;
+}
+#top-jumbo .left-side .info-container {
+    position: relative;
+    top: -110px;
+}
+
+#top-jumbo .left-side .info-container h1 {
+    color: #5F65F1;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+#top-jumbo .left-side .info-container p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.8;
+    opacity: 0.4;
+    margin-bottom: 40px;
+}
+
+#top-jumbo .left-side .info-container .email-area {
+    background: white;
+    border-radius: 50px;
+    display: inline-block; /* doesnt go full length then, only as far as the elements inside */
+    padding: 5px;
+}
+#top-jumbo .left-side .info-container .email-area .far {
+    font-size: 2rem;
+    position: relative;
+    top: 8px;
+    margin-left: 20px;
+    opacity: 0.2;
+}
+
+#top-jumbo .left-side .info-container .email-area input[type="email"] {
+    background: white;
+    border: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    width: 180px;
+    opacity: 0.5;
+}
+
+#top-jumbo .left-side .info-container .email-area button {
+    background: #5F65F1;
+    padding: 20px 50px;
+    border-radius: 50px;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+#top-jumbo .right-side {
+    width: 60%;
+    display: inline-block;
+    float: left; /* Because using floats it can't detect height and width of elements, so use :after (like a clear fix) to solve this problem */
+    padding: 0 40px;
+}
+
+#top-jumbo .right-side img {
+    width: 100%;
+}

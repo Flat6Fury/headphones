@@ -1,0 +1,69 @@
+header {
+    padding: 30px 35px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+header:after {   /* Put this on the parent element any time using floats */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header a {
+    color: #5F65F1;
+    text-decoration: none;
+}
+
+header .logo {
+    display: inline-block;
+    float: left;
+    margin-right: 28px;
+}
+
+header .logo img {
+    width: 60px;
+}
+
+header .menu {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 20px;
+}
+
+header .menu a {
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+header .header-buttons {
+    display: inline-block;
+    float: right;
+}
+
+header .header-buttons .blue-btn {
+    margin-right: 10px;
+    background: #5F65F1;
+    color: white;
+    padding: 14px 20px 14px 30px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+}
+header .header-buttons .blue-btn .fas {
+    margin-left: 10px;
+}
+
+header .header-buttons .orange-btn {
+    margin-left: 10px;
+    background: #FEA83B;
+    color: white;
+    padding: 14px 46px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+}
