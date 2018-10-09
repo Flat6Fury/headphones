@@ -1,6 +1,10 @@
 #blueprint {
-    background: #5F65F1;
+    background: #232c66; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #232c66 1%, #5F65F1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #232c66 1%, #5F65F1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #232c66 1%, #5F65F1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     padding: 170px 0;
+    color: white;
 }
 
 #blueprint .container:after { /* Always use this clear fix on the parent element when using floats */
@@ -10,7 +14,7 @@
 }
 
 #blueprint .left-side {
-    width: 50%;
+    width: 60%;
     float: left;
 }
 
@@ -19,6 +23,81 @@
 }
 
 #blueprint .right-side {
-    width: 50%;
+    width: 40%;
     float: left;
+}
+
+#blueprint .right-side h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    line-height: 1.1;
+}
+
+#blueprint .right-side .info-box {
+    padding: 0 0 50px;
+}
+
+#blueprint .right-side .info-box:after { /* Always use this clear fix on the parent element when using floats */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#blueprint .right-side .info-box .col-1 {
+    width: 40%;
+    float: left;
+}
+
+#blueprint .right-side .info-box .col-1 .icon-container {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid white;  
+    position: relative;
+}
+
+#blueprint .right-side .info-box .col-1 .icon-container .dashed-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px dashed white; 
+    margin: 0 auto; 
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+#blueprint .right-side .info-box .col-1 .icon-container .fab, #blueprint .right-side .info-box .col-1 .icon-container .fas {
+    font-size: 4rem; 
+    top: 35px;
+    left: 43px;
+    position: absolute;
+}
+
+#blueprint .right-side .info-box .col-2 {
+    width: 60%; 
+    float: left;
+}
+
+#blueprint .right-side .info-box .col-2 h3 {
+    font-size: 2rem;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+#blueprint .right-side .info-box .col-2 p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+#blueprint .right-side .info-box .col-2 a {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FEA83B;
 }
