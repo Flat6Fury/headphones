@@ -6,12 +6,14 @@
 @import "landing-page/color-collection.css";
 @import "landing-page/blueprint.css";
 @import "landing-page/latest.css";
+@import "landing-page/footer.css";
 /* 
 FEA83B orange
 6066F2 light blue
 B286F8 purple
 4C44C1 blue
 E6CDF9 light purple
+D5E2EA light placeholder
 */
 
 .container {
@@ -34,4 +36,8 @@ E6CDF9 light purple
     -webkit-box-shadow: 0px 0px 65px 13px rgba(158,158,158,0.2);
     -moz-box-shadow: 0px 0px 65px 13px rgba(158,158,158,0.2);
     box-shadow: 0px 0px 65px 13px rgba(158,158,158,0.2);
+}
+
+input::placeholder {
+    color: #D5E2EA;
 }

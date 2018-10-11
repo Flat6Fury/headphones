@@ -75,20 +75,190 @@
     text-align: center;
 }
 
-#latest .body .column .bg-square {
+#latest .body .column:nth-child(1) .bg-square {
     width: 275px;
     height: 275px;
     margin: 0 auto;
-    background: #e04e4e; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #e04e4e 1%, #232c66 49%, #232c66 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #e04e4e 1%, #232c66 49%,#232c66 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #e04e4e 1%,#232c66 49%, #232c66 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #5047cc; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5047cc 1%, #4ad6d1 49%, #db57c3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #5047cc 1%, #4ad6d1 49%,#db57c3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5047cc 1%,#4ad6d1 49%, #db57c3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
+}
+
+#latest .body .column:nth-child(2) .bg-square {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto;
+    background: #ff5959; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ff5959 1%, #ecf597 49%, #823434 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ff5959 1%, #ecf597 49%,#823434 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ff5959 1%,#ecf597 49%, #823434 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
+}
+
+#latest .body .column:nth-child(3) .bg-square {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto;
+    background: #5985ff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5985ff 1%, #60c444 49%, #d7add1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #5985ff 1%, #60c444 49%,#d7add1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5985ff 1%,#60c444 49%, #d7add1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     position: relative;
 }
 
 #latest .body .column .bg-square img {
-    width: 100%;
+    width: 120%;
+    position: absolute;
+    top: -30%;
+    left: -12%;
+}
+
+#latest .body .column:nth-child(1) .bg-square .cart {
+    background: #5047cc; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5047cc 1%, #4ad6d1 49%, #db57c3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #5047cc 1%, #4ad6d1 49%,#db57c3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5047cc 1%,#4ad6d1 49%, #db57c3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    color: white;
+}
+#latest .body .column:nth-child(2) .bg-square .cart {
+    background: #ff5959; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ff5959 1%, #ecf597 49%, #823434 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ff5959 1%, #ecf597 49%,#823434 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ff5959 1%,#ecf597 49%, #823434 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    color: white;
+}
+#latest .body .column:nth-child(3) .bg-square .cart {
+    background: #5985ff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5985ff 1%, #60c444 49%, #d7add1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #5985ff 1%, #60c444 49%,#d7add1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5985ff 1%,#60c444 49%, #d7add1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    color: white;
+}
+
+#latest .body .column .bg-square .cart .fas {
+    font-size: 2rem;
+    position: relative;
+    top: 20px;
+    left: -2px;
+}
+
+#latest .body .column .line {
+    width: 35%;
+    height: 2px;
+    background: #5F65F1;
+    margin: 50px auto;
+    display: inline-block;
+}
+
+#latest .body .column .price {
+    color: #FEA83B;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+#latest .footer {
+    text-align: center;
+    position: relative;
+}
+
+#latest .footer img {
+    width: 40%;
+    margin: 0 auto;
+    z-index: 1;
     position: absolute;
     top: 0;
-    left: 5%;
+    left: 30%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) invert(100%);
+    opacity: 0.1;
+    transform: rotate(33deg);
+}
+
+#latest .footer .info-box {
+    z-index: 2;
+    position: relative;
+    padding: 125px 0;
+}
+
+#latest .footer .info-box h2 {
+    color: #5F65F1;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+#latest .footer .info-box form {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#latest .footer .info-box .input-area {
+    background: white;
+    border-radius: 50px;
+    display: inline-block; /* doesnt go full length then, only as far as the elements inside */
+    padding: 5px;
+    float: left;
+}
+#latest .footer .info-box .input-area .fas, #latest .footer .info-box .input-area .far {
+    font-size: 2rem;
+    position: relative;
+    top: 8px;
+    margin-left: 20px;
+    color: #D5E2EA;
+}
+
+#latest .footer .info-box .input-area:nth-child(1) {
+    height: 69px;
+    margin-right: 20px;
+}
+
+#latest .footer .info-box .input-area input {
+    background: white;
+    border: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    width: 180px;
+}
+
+#latest .footer .info-box .input-area:nth-child(1) input {
+    position: relative;
+    top: 8px;
+}
+
+#latest .footer .info-box .input-area:nth-child(1) .fas {
+    position: relative;
+    top: 14px;
+}
+
+#latest .footer .info-box .input-area button {
+    background: #5F65F1;
+    padding: 20px 50px;
+    border-radius: 50px;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }

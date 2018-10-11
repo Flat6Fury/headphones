@@ -59,7 +59,7 @@
     position: relative;
     top: 8px;
     margin-left: 20px;
-    opacity: 0.2;
+    color: #D5E2EA;
 }
 
 #top-jumbo .left-side .info-container .email-area input[type="email"] {
@@ -69,7 +69,6 @@
     font-size: 0.9rem;
     text-transform: uppercase;
     width: 180px;
-    opacity: 0.5;
 }
 
 #top-jumbo .left-side .info-container .email-area button {

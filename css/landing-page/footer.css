@@ -1,0 +1,55 @@
+footer {
+    background: #3045c9; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #3045c9 1%, #5F65F1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #3045c9 1%, #5F65F1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #3045c9 1%, #5F65F1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer h2 span {
+    font-weight: 700;
+    color: #FEA83B;
+}
+
+footer .menu { 
+    margin-bottom: 20px;
+}
+
+footer .menu li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+footer .menu li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+footer p {
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+footer .social-media li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+footer .social-media li a {
+    color: #D5E2EA;
+    font-size: 1.6rem;
+    opacity: 0.5;
+}
