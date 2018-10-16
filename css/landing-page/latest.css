@@ -262,3 +262,160 @@
     font-size: 0.9rem;
     text-transform: uppercase;
 }
+
+/* Laptop Devices */
+@media only screen and (max-width: 1215px) {
+    
+}
+/* Tablet Devices */
+@media only screen and (max-width: 1023px) {
+    #latest .header h1 {
+        font-size: 3.5rem;
+    }  
+
+    #latest .header .directions {
+        top: 18px;
+    }
+
+    #latest .body .column {
+        width: 50%;
+        margin-bottom: 160px;
+    }
+
+    #latest .body .column:nth-child(3) {
+        width: 100%;
+        float: left;
+        padding: 0 15px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    #latest .footer img {
+        width: 40%;
+        margin: 0 auto;
+        z-index: 1;
+        position: absolute;
+        top: 100px;
+        left: 30%;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%) invert(100%);
+        opacity: 0.1;
+        transform: rotate(33deg);
+    }
+
+    #latest .footer .info-box form {
+        width: 80%;
+    }
+
+    #latest .footer .info-box .input-area .far,  #latest .footer .info-box .input-area .fas {
+        position: relative;
+        top: 14px;
+        margin-left: 0;
+        color: #D5E2EA;
+        float: left; 
+        width: 15%;
+        text-align: center;
+    }
+
+    #latest .footer .info-box .input-area input[type="email"] {
+        width: 50%;
+        float: left;
+        position: relative;
+        top: 12px;
+    }
+
+    #latest .footer .info-box .input-area button {
+        background: #5F65F1;
+        padding: 20px 0;
+        font-size: 0.9rem;
+        width: 35%;
+        float: left;
+    }
+
+    #latest .footer .info-box .input-area:nth-child(1) {
+        width: 45%;
+    }
+
+    #latest .footer .info-box .input-area:nth-child(1) input {
+        width: 80%;
+        position: relative;
+        top: 12px;
+    }
+
+    #latest .footer .info-box .input-area:nth-child(2) {
+        margin: 0;
+        width: 50%;
+    }
+}
+/* Mobile Devices */
+@media only screen and (max-width: 768px) {
+    #latest .header {
+        text-align: center;
+    }
+
+    #latest .header h1 {
+        font-size: 3rem;
+        text-align: center;
+        max-width: none;
+    }  
+
+    #latest .header .directions {
+        float: none;
+        display: inline-block;
+        position: static;
+        top: 0;
+        margin: 50px auto;
+    }
+
+    #latest .body .column {
+        width: 100%;
+        margin-bottom: 160px;
+    }
+
+    #latest .body .column:nth-child(1) .bg-square,
+    #latest .body .column:nth-child(2) .bg-square,
+    #latest .body .column:nth-child(3) .bg-square {
+        transform: scale(.8);
+    }
+
+    #latest .footer .info-box .input-area .far, #latest .footer .info-box .input-area .fas {
+        position: relative;
+        top: 14px;
+        margin-left: 0;
+        color: #D5E2EA;
+        float: left; 
+        width: 15%;
+        text-align: center;
+    }
+
+    #latest .footer .info-box .input-area input[type="email"] {
+        width: 50%;
+        float: left;
+        position: relative;
+        top: 12px;
+    }
+
+    #latest .footer .info-box .input-area button {
+        background: #5F65F1;
+        padding: 20px 0;
+        font-size: 0.9rem;
+        width: 35%;
+        float: left;
+    }
+
+    #latest .footer .info-box .input-area:nth-child(1) {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #latest .footer .info-box .input-area:nth-child(1) input {
+        width: 80%;
+    }
+
+    #latest .footer .info-box .input-area:nth-child(2) {
+        margin: 0;
+        width: 100%;
+    }
+}

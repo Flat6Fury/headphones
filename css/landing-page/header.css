@@ -26,6 +26,10 @@ header .logo img {
     width: 60px;
 }
 
+header .mobile-menu {
+    display: none;
+}
+
 header .menu {
     display: inline-block;
     float: left;
@@ -66,4 +70,62 @@ header .header-buttons .orange-btn {
     text-transform: uppercase;
     position: relative;
     top: 20px;
+}
+
+/* Laptop Devices */
+@media only screen and (max-width: 1215px) {
+    
+}
+/* Tablet Devices */
+@media only screen and (max-width: 1023px) {
+    header { 
+        padding: 30px 0;
+        margin-bottom: 0;
+    }
+
+    header .mobile-menu {
+        display: inline-block;
+        float: right;
+        font-size: 2.5rem;
+        color: #5F65F1;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* header .logo { (If want to center logo)
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    } */
+
+    header .menu, header .header-buttons {
+        display: none;
+    }
+}
+/* Mobile Devices */
+@media only screen and (max-width: 768px) {
+    header { 
+        padding: 30px 0;
+        margin-bottom: 0;
+    }
+
+    header .mobile-menu {
+        display: inline-block;
+        float: right;
+        font-size: 2.5rem;
+        color: #5F65F1;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* header .logo { (If want to center logo)
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    } */
+
+    header .menu, header .header-buttons {
+        display: none;
+    }
+
 }

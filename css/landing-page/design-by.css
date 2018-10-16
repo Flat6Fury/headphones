@@ -140,3 +140,46 @@
     margin-bottom: 1.5rem;
     margin-top: 61px;
 }
+
+/* Laptop Devices */
+@media only screen and (max-width: 1215px) {
+    
+}
+/* Tablet Devices */
+@media only screen and (max-width: 1023px) {
+    #design-by .design-container .info-section .info-list li {
+        line-height: 2;
+    }
+
+    #design-by .design-container .icons-section .refresh-circle {
+        left: 43%;
+    }
+}
+/* Small Tablet Devices */
+@media only screen and (max-width: 850px) {
+    #design-by .design-container .icons-section .refresh-circle {
+        left: 41%;
+    }
+}
+/* Mobile Devices */
+@media only screen and (max-width: 768px) {
+    #design-by .design-container .bg-container {
+        padding: 20px;
+    }
+
+    #design-by .design-container .info-section {
+        width: 100%;
+    }
+
+    #design-by .design-container .info-section .info-list li {
+        line-height: 2;
+    }
+
+    #design-by .design-container .icons-section {
+        width: 100%;
+    }
+
+    #design-by .design-container .icons-section .refresh-circle {
+        display: none;
+    }
+}

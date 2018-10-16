@@ -53,3 +53,23 @@ footer .social-media li a {
     font-size: 1.6rem;
     opacity: 0.5;
 }
+
+/* Laptop Devices */
+@media only screen and (max-width: 1215px) {
+    
+}
+/* Tablet Devices */
+@media only screen and (max-width: 1023px) {
+    
+}
+/* Mobile Devices */
+@media only screen and (max-width: 768px) {
+    footer h2 {
+        line-height: 1.2;
+    }
+
+    footer .menu li {
+        display: inline-block;
+        padding: 10px 10px;
+    }
+}
