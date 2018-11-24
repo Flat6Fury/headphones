@@ -26,7 +26,11 @@ header .logo img {
     width: 60px;
 }
 
-header .mobile-menu {
+header .menu-btn {
+    display: none;
+}
+
+.mobile-menu {
     display: none;
 }
 
@@ -40,6 +44,15 @@ header .menu {
 header .menu a {
     text-transform: uppercase;
     margin: 0 15px;
+    transition: all .2s ease-in-out;
+    padding: 0 5px;
+}
+
+header .menu a:hover {
+    background:#5F65F1;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 header .header-buttons {
@@ -51,25 +64,29 @@ header .header-buttons .blue-btn {
     margin-right: 10px;
     background: #5F65F1;
     color: white;
-    padding: 14px 20px 14px 30px;
+    padding: 14px 30px;
     border-radius: 35px;
     text-transform: uppercase;
     position: relative;
     top: 20px;
 }
 header .header-buttons .blue-btn .fas {
-    margin-left: 10px;
+    padding-right: 5px;
 }
 
 header .header-buttons .orange-btn {
     margin-left: 10px;
     background: #FEA83B;
     color: white;
-    padding: 14px 46px;
+    padding: 14px 36px;
     border-radius: 35px;
     text-transform: uppercase;
     position: relative;
     top: 20px;
+}
+
+header .header-buttons .orange-btn .fas {
+    margin-right: 10px;
 }
 
 /* Laptop Devices */
@@ -83,7 +100,7 @@ header .header-buttons .orange-btn {
         margin-bottom: 0;
     }
 
-    header .mobile-menu {
+    header .menu-btn {
         display: inline-block;
         float: right;
         font-size: 2.5rem;
@@ -100,6 +117,56 @@ header .header-buttons .orange-btn {
 
     header .menu, header .header-buttons {
         display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 50%;
+        background: white;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        transform: translate3d(-120%, 0, 0);
+        transition: all .4s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .mobile-menu.active {
+        transform: translate3d(0, 0, 0);
+    }
+
+    .mobile-menu .x-button {
+        font-size: 2rem;
+        color: #FEA83B;
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px 20px 0 0;
+        transition: all .1s ease-in-out;
+    }
+
+    .mobile-menu .x-button:hover {
+        cursor: pointer;
+        color: #5F65F1;
+    }
+
+    .mobile-menu a {
+        padding: 1rem;
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: #5F65F1;
+        transition: all .2s ease-in-out;
+    }
+    
+    .mobile-menu a:hover {
+        color: #FEA83B;
+        background: #5F65F1;
+        border-radius: 10px;
     }
 }
 /* Mobile Devices */
@@ -109,7 +176,7 @@ header .header-buttons .orange-btn {
         margin-bottom: 0;
     }
 
-    header .mobile-menu {
+    header .menu-btn {
         display: inline-block;
         float: right;
         font-size: 2.5rem;
@@ -126,6 +193,11 @@ header .header-buttons .orange-btn {
 
     header .menu, header .header-buttons {
         display: none;
+    }
+
+    .mobile-menu a {
+        padding: 1rem;
+        font-size: 1.5rem;
     }
 
 }
